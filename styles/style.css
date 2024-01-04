@@ -149,7 +149,60 @@
     border-radius: 5px;
 }
 
+/*css for select tag */
+select {
+    border: 0;
+    outline: 0;
+    font: inherit;
+    height: 2em;
+    padding: 0 4em 0 7px;
+    
+    
+    border-radius: 0.25em;
+    /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+  }
+  select option {
+    color: inherit;
+    margin: 5px;
+    background-color: #fbfbfb;
+  }
+  select:focus {
+    outline: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
 
+.input_box > input{
+    background-color: rgb(234, 231, 231);
+    height: 25px;
+}
+.input_box> input:focus {
+    outline: none;
+}
+
+input[type="date"]{
+    padding: 6px;
+    font-family: "Roboto Mono",monospace;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.dropdown, .date_picker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 @media only screen and (max-width: 768px) {
     
     .container{
